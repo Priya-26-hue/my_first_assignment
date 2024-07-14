@@ -1,0 +1,1529 @@
+{
+ "cells": [
+  {
+   "cell_type": "raw",
+   "id": "3db629dd-bd16-4f43-865c-146bb9c3ff82",
+   "metadata": {},
+   "source": [
+    "# Q1 Explain the key features of python that make it a popular choice for programming.\n",
+    "\n",
+    "# Python is a very easy programming language to learn as compare to other programming language.\n",
+    "# Python has a lot of libraries where all optimise and well readen codes are kept. \n",
+    "# Python is a general purpose language.\n",
+    "# Python is a very versatile language.\n",
+    "# It is  very easy to read python code.\n",
+    "# Python is a object-oriented language.\n",
+    "# Python has used active community.\n",
+    "# Python can connect with other platforms.\n"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "902ac9cb-9265-4e5f-96cc-ae15582c54f4",
+   "metadata": {},
+   "source": [
+    "# Q3 Compare and contrast mutable and immutable objects in python with examples.\n",
+    "\n",
+    "# Mutable objects are those that can be changed after they are created . Example - list, dictionaries, sets\n",
+    "# Immutable3 objects are those that cannot be changed after they are created . Examples - strings, integers, tuples."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 14,
+   "id": "d0e80300-5e27-4876-a517-92b4a3ce98cc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2.5, 'priya', 'indu']"
+      ]
+     },
+     "execution_count": 14,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# examples of mutable objects\n",
+    "\n",
+    "list_cont = [ 1, 2.5, \"priya\", \"indu\"]\n",
+    "list_cont"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 15,
+   "id": "7d154409-3e60-4603-b7a7-08dd1cc0c5b8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'indu'"
+      ]
+     },
+     "execution_count": 15,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list_cont[3]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 16,
+   "id": "1a7a03ba-e057-410a-b7ef-9058cf6653a3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "[1, 2.5, 'priya', 'shreya']"
+      ]
+     },
+     "execution_count": 16,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "list_cont[3] = \"shreya\"\n",
+    "list_cont"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 20,
+   "id": "10856add-745a-4927-9346-c5b2b5152567",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'priya'"
+      ]
+     },
+     "execution_count": 20,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Examples of immutable objects :-\n",
+    "\n",
+    "#string\n",
+    "a= \"priya\"\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 21,
+   "id": "663a04d7-304e-44b2-8b8b-f55fe189f91c",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'p'"
+      ]
+     },
+     "execution_count": 21,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a[0]"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 22,
+   "id": "fa5baa00-cfe4-4ed7-b91a-0687d110cd1f",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "TypeError",
+     "evalue": "'str' object does not support item assignment",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mTypeError\u001b[0m                                 Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[22], line 1\u001b[0m\n\u001b[0;32m----> 1\u001b[0m \u001b[43ma\u001b[49m\u001b[43m[\u001b[49m\u001b[38;5;241;43m0\u001b[39;49m\u001b[43m]\u001b[49m\u001b[38;5;241m=\u001b[39ms\n",
+      "\u001b[0;31mTypeError\u001b[0m: 'str' object does not support item assignment"
+     ]
+    }
+   ],
+   "source": [
+    "a[0]=s"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 23,
+   "id": "ace2c416-0e8e-4bc6-9602-1306c5182109",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "11"
+      ]
+     },
+     "execution_count": 23,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Q4 Discuss the different type of operators in python and provide examples of how they are used.\n",
+    "\n",
+    "#Arithmatic operators\n",
+    "a=5\n",
+    "b=6\n",
+    "a+b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 24,
+   "id": "7e943995-765b-470c-92a2-017bb2e82327",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 24,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=9\n",
+    "b=7\n",
+    "a-b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 25,
+   "id": "6ee828cd-cfde-46d1-ba7b-74c702f1b678",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2.2857142857142856"
+      ]
+     },
+     "execution_count": 25,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=16\n",
+    "b=7\n",
+    "a/b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 26,
+   "id": "a8d69ff5-f9e3-40d5-a0cc-c3179cca038f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "45"
+      ]
+     },
+     "execution_count": 26,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=5\n",
+    "b=9 \n",
+    "a*b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 27,
+   "id": "c154f79c-2aeb-4efa-a396-4068548f4a01",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 27,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=5\n",
+    "b=7\n",
+    "a%b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 29,
+   "id": "2862dcd8-08bb-4d1b-bdff-7c836eb3b52b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 29,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Comparison operator\n",
+    "\n",
+    "10>2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 30,
+   "id": "f8950e14-dbaa-4457-b1b1-c48153130cbe",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 30,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10<5"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 31,
+   "id": "00570497-6749-4024-8b1a-1600f464da93",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 31,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10<=10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 32,
+   "id": "cc9c372c-3555-4374-a518-232af4ad9628",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 32,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10==10"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 33,
+   "id": "f32906e8-a9e6-42b8-a2ce-e5a405c6dbc8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 33,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "10!=2"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 34,
+   "id": "12925848-dd4f-4b8a-aa5f-dfdd27ef6b77",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 34,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Logical operator\n",
+    "\n",
+    "1 and 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 35,
+   "id": "2fa449b6-5721-49fc-8ecf-2fbbfca93cc5",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 35,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "1 and 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 36,
+   "id": "afdd905b-04f6-4d2c-8db6-54a1fafc5d63",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "0"
+      ]
+     },
+     "execution_count": 36,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "0 or 0"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 37,
+   "id": "697bed11-f2ca-467e-8036-ea331af4ed85",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "1"
+      ]
+     },
+     "execution_count": 37,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "0 or 1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 41,
+   "id": "4f4ecf5c-ab0b-4f7a-af07-5971eb1f2e61",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2.142857142857143"
+      ]
+     },
+     "execution_count": 41,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# floor operator [bringing value to lower side]\n",
+    "\n",
+    "15/7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 42,
+   "id": "97269421-dd53-40a4-b66e-06fbdf11f562",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2"
+      ]
+     },
+     "execution_count": 42,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "15//7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 43,
+   "id": "92f21c88-344d-4cd4-aadd-e1b41a3ae297",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 43,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Membership operator\n",
+    "\n",
+    "a= \"data analytics\"\n",
+    "\"c\" in a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 44,
+   "id": "00f5beb5-56b3-4bd5-a7ff-e75e5b4f6e93",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 44,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "\"p\" in a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 45,
+   "id": "678d436e-3ad1-4ca8-bdce-e938d14421bc",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "False"
+      ]
+     },
+     "execution_count": 45,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Identity operator\n",
+    "\n",
+    "a= 5\n",
+    "b=9\n",
+    "a is b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 46,
+   "id": "90c55b52-7c84-4d7a-a013-1601c461a755",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 46,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=5\n",
+    "b=5\n",
+    "a is b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 48,
+   "id": "b5b4d627-b6b4-4012-88eb-7da8ed38b0c3",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "True"
+      ]
+     },
+     "execution_count": 48,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = 6\n",
+    "b = a\n",
+    "a is b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 50,
+   "id": "abe0830b-af38-46fa-8167-6c29851e2274",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "170"
+      ]
+     },
+     "execution_count": 50,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# bitwise operator\n",
+    "\n",
+    "250 & 175"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 52,
+   "id": "15359f68-3e66-49ed-bfc9-a1b8e1f2c9ba",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0b11111010'"
+      ]
+     },
+     "execution_count": 52,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bin(250)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 53,
+   "id": "0345df38-2c74-4db9-a051-553b877caf77",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0b10101111'"
+      ]
+     },
+     "execution_count": 53,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bin (175)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 54,
+   "id": "d4e2c82e-8273-4ada-9cad-df8f4aaf1073",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'0b10101010'"
+      ]
+     },
+     "execution_count": 54,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "bin(170)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 55,
+   "id": "c9f3071c-2a8e-4777-810b-cfc0425f59b6",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "-4"
+      ]
+     },
+     "execution_count": 55,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# negotiation operator it will give one lower value with negative symbol\n",
+    "\n",
+    "~3"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 56,
+   "id": "a44b12a2-626d-4148-9dd5-a51bcf064a90",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "-9"
+      ]
+     },
+     "execution_count": 56,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "~8"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 57,
+   "id": "7760af0c-b095-4065-b76c-92f9212cb7c4",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "18"
+      ]
+     },
+     "execution_count": 57,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Assignment operator\n",
+    "\n",
+    "a=7\n",
+    "a+=11\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 58,
+   "id": "b9a5b840-185b-4a43-a74e-194ebbb55959",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=5\n",
+    "a%=7"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 59,
+   "id": "f1c84108-6425-4dcf-8e26-04d0806bc6dd",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 59,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 61,
+   "id": "450fd98d-cf3d-45cd-b009-3e99291499a9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "30"
+      ]
+     },
+     "execution_count": 61,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=6\n",
+    "a*=5\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 62,
+   "id": "f129f1d0-5d38-40dd-922b-b9b71c9aaec8",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "5"
+      ]
+     },
+     "execution_count": 62,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# Q5 Explain the concept of type casting in python with examples.\n",
+    "\n",
+    "2+3 # this will add simply because these are two integers"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 67,
+   "id": "d09487a6-ce5f-4189-9302-3331ed45571e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'str'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "# The process of converting one data type into another in python is called type casting.\n",
+    "\n",
+    "a=\"5\"\n",
+    "print(type(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 69,
+   "id": "d50511cd-e18d-459a-b769-8f83b9462f7c",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "<class 'int'>\n"
+     ]
+    }
+   ],
+   "source": [
+    "print(type(int(a)))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 70,
+   "id": "31d27a51-6d31-42db-8905-1b3e65e7abb7",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "16"
+      ]
+     },
+     "execution_count": 70,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a=\"9\"\n",
+    "b= 7\n",
+    "int(a)+b"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 74,
+   "id": "ee4e799d-a7f2-4167-9e85-ab7f43cdbc5d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "float"
+      ]
+     },
+     "execution_count": 74,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = 8.9\n",
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 75,
+   "id": "cececc3d-f51a-4b9d-ade4-843e0a7b0dbe",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "8"
+      ]
+     },
+     "execution_count": 75,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "int(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 77,
+   "id": "5b53e185-fbc1-4cae-ab1a-59ee2b804c6f",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 77,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "type(int(a))"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 81,
+   "id": "64a733c0-e0bd-4825-a44c-f27cd27146d2",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "int"
+      ]
+     },
+     "execution_count": 81,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# integer to float\n",
+    "\n",
+    "b=9\n",
+    "type(b)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 83,
+   "id": "522da748-8443-4575-8dcb-951e797bbe5b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "9.0"
+      ]
+     },
+     "execution_count": 83,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a = float(b)\n",
+    "a"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 84,
+   "id": "06a1c3ac-105a-466b-9238-e37076e2379a",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "str"
+      ]
+     },
+     "execution_count": 84,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "# string to float\n",
+    "a= \"2.6\"\n",
+    "type(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 86,
+   "id": "61d1687b-a686-4a85-ab67-711c2de86a91",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "2.6"
+      ]
+     },
+     "execution_count": 86,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "float(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 87,
+   "id": "df856b88-0a77-4cc2-bc80-48d8b6d90f7b",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "58.0"
+      ]
+     },
+     "execution_count": 87,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "a= \"58\"\n",
+    "float(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 88,
+   "id": "8e53249a-d7d3-467d-b8cf-37d106e3546d",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "59"
+      ]
+     },
+     "execution_count": 88,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "#strig to integer\n",
+    "\n",
+    "a=\"59\"\n",
+    "int(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 89,
+   "id": "23ccac04-525e-4a6b-92ac-e14f6e1880a8",
+   "metadata": {},
+   "outputs": [
+    {
+     "ename": "ValueError",
+     "evalue": "invalid literal for int() with base 10: 'priya'",
+     "output_type": "error",
+     "traceback": [
+      "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+      "\u001b[0;31mValueError\u001b[0m                                Traceback (most recent call last)",
+      "Cell \u001b[0;32mIn[89], line 2\u001b[0m\n\u001b[1;32m      1\u001b[0m a\u001b[38;5;241m=\u001b[39m\u001b[38;5;124m\"\u001b[39m\u001b[38;5;124mpriya\u001b[39m\u001b[38;5;124m\"\u001b[39m\n\u001b[0;32m----> 2\u001b[0m \u001b[38;5;28;43mint\u001b[39;49m\u001b[43m(\u001b[49m\u001b[43ma\u001b[49m\u001b[43m)\u001b[49m\n",
+      "\u001b[0;31mValueError\u001b[0m: invalid literal for int() with base 10: 'priya'"
+     ]
+    }
+   ],
+   "source": [
+    "a=\"priya\"\n",
+    "int(a)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "e0fd3ad1-9970-4b15-b013-b71a8093282d",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 104,
+   "id": "cff88e90-5e27-432d-993c-4d61b5876eaa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the number is divisible by 4\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q6 How do conditional statements work in python ? Illustrate with examples.\n",
+    "\n",
+    "# Conditional statements helps us to code decision based on predefined statements or conditions.\n",
+    "# examples if, if-else, elif-else etc.\n",
+    "\n",
+    "a=16\n",
+    "if a/4:\n",
+    "    print(\"the number is divisible by 4\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 105,
+   "id": "cdc86907-8ffc-4253-bc36-95b9f46b4cd9",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the number is greater than 100\n"
+     ]
+    }
+   ],
+   "source": [
+    "a=1000\n",
+    "if a>100:\n",
+    "    print(\"the number is greater than 100\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 93,
+   "id": "b531c4db-1d6e-491d-82d0-7c296f9da3d7",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "a=500 #this statement will not execute because statement is not true\n",
+    "if a<100:\n",
+    "    print(\"the number is less than 100\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 106,
+   "id": "19dbe1b8-c5f0-478f-9860-c9449b25d822",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "this is the number of interest\n"
+     ]
+    }
+   ],
+   "source": [
+    "number =1000\n",
+    "if {(number % 2== 0) & (number >0)}:\n",
+    "    print (\"this is the number of interest\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 107,
+   "id": "c2b3f2b0-fc1b-44b1-b8b7-1c365d54b65d",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "the student did not pass the exam\n"
+     ]
+    }
+   ],
+   "source": [
+    "# if-else condition\n",
+    "\n",
+    "marks= \"45\"\n",
+    "if marks > \"45\":\n",
+    "    print (\" the student has passed the exam\")\n",
+    "else:\n",
+    "    print (\"the student did not pass the exam\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 108,
+   "id": "1c1a7d1c-d110-40b4-a7c5-360429b78baa",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "i will play cricket\n"
+     ]
+    }
+   ],
+   "source": [
+    "weather = \"sunny\"\n",
+    "if weather == \"cloudy\":\n",
+    "    print(\"I will not play cricket\")\n",
+    "else:\n",
+    "    print(\"i will play cricket\")\n",
+    "          \n",
+    "          "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 109,
+   "id": "c7e038aa-d0c8-49c6-952f-a12130d9a82e",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "I will not play cricket\n"
+     ]
+    }
+   ],
+   "source": [
+    "weather = \"sunny\"\n",
+    "if weather == \"sunny\":\n",
+    "    print(\"I will not play cricket\")\n",
+    "else:\n",
+    "    print(\"i will play cricket\")\n",
+    "          \n",
+    "          "
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 113,
+   "id": "491d92b5-8b3f-4368-8542-42efcd0279de",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "you are an adult\n"
+     ]
+    }
+   ],
+   "source": [
+    "age = 21\n",
+    "if age > 21:\n",
+    "    print (\"You are a mature adult\")\n",
+    "elif age == 21:\n",
+    "    print(\"you are an adult\")\n",
+    "else:\n",
+    "    print (\"you are a teenager\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 115,
+   "id": "3b04b9bd-2f2b-4951-a16e-c38348ab4768",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "you are a teenager\n"
+     ]
+    }
+   ],
+   "source": [
+    "age = 21\n",
+    "if age > 21:\n",
+    "    print (\"You are a mature adult\")\n",
+    "elif age < 21:\n",
+    "    print(\"you are an adult\")\n",
+    "else:\n",
+    "    print (\"you are a teenager\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 117,
+   "id": "60c965b5-abd3-4fd7-982d-bc331d03c46f",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "come here\n"
+     ]
+    }
+   ],
+   "source": [
+    "# Q2 Describe the role of predefined keywords in python and provide examples of how they are used in a program\n",
+    "\n",
+    "# keywords are used to define the syntax of code. Examples- if, break, continue, elif, if-else etc.\n",
+    "\n",
+    "print (\"come here\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 120,
+   "id": "4de1bf48-c683-46ca-9d10-330a6c0c0353",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdin",
+     "output_type": "stream",
+     "text": [
+      " Please enter your name Priyanshi\n"
+     ]
+    }
+   ],
+   "source": [
+    "name=  input(\" Please enter your name\")"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 121,
+   "id": "d8c1b230-2100-4901-b3c1-6acbe99c61f9",
+   "metadata": {},
+   "outputs": [
+    {
+     "data": {
+      "text/plain": [
+       "'Priyanshi'"
+      ]
+     },
+     "execution_count": 121,
+     "metadata": {},
+     "output_type": "execute_result"
+    }
+   ],
+   "source": [
+    "name"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "ebb6206c-14b8-4177-a790-8969f391e181",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Q7  Describe the different types of loops in python  and their use cases with examples\n",
+    "\n",
+    "# Loop statement allows us to execute a block of code repeatedly\n",
+    "# examples;- while loop, for loop.\n",
+    "# while loop:- it repeatedly execute a statement until condition is met."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 133,
+   "id": "ec223d2c-350d-4d88-8d82-671e555d2211",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* \n",
+      "* * \n",
+      "* * * \n",
+      "* * * * \n"
+     ]
+    }
+   ],
+   "source": [
+    "# print a right angle triangle with * using while loop\n",
+    "\n",
+    "row = 1\n",
+    "while row <=4:\n",
+    "    col = 1\n",
+    "    while col <= row:\n",
+    "        print(\"*\", end = \" \")\n",
+    "        col = col+1\n",
+    "    print()\n",
+    "    row = row+1"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 129,
+   "id": "8dcbb682-75af-4f9e-bb57-a3d2ef0302a4",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# print a right triangle with * using for loop"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 134,
+   "id": "3b20dcb2-1b22-4507-9faf-c253a17a7966",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "* \n",
+      "* * \n",
+      "* * * \n",
+      "* * * * \n"
+     ]
+    }
+   ],
+   "source": [
+    "for i in range(4):\n",
+    "    for j in range(i+1):\n",
+    "        print(\"*\", end = \" \")\n",
+    "    print()"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "288b8df9-7659-437c-b594-cbe9be869210",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.10.8"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
